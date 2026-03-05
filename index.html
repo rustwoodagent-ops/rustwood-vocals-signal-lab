@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rustwood Vocals — Custom Songs</title>
+  <meta name="description" content="Turn your story into a finished song. Bespoke songwriting, vocal performance, and production polish." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero section" id="top">
+      <div class="hero-copy panel lift">
+        <p class="eyebrow">RUSTWOOD VOCALS</p>
+        <h1>Turn your story into a finished song.</h1>
+        <p class="subhead">Bespoke songwriting, vocal performance, and production polish — crafted like a signature artefact.</p>
+        <p class="trust-line">4–6 weeks • Rush available • Master + stems • You own it</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-scroll="#brief">Book a Creative Brief</button>
+          <button class="btn btn-secondary" data-scroll="#examples">Hear Examples</button>
+        </div>
+        <p class="micro-line">Built for weddings, anniversaries, memorials, birthdays, and personal anthems.</p>
+      </div>
+
+      <aside class="hero-card panel lift" aria-label="Rustwood Journal VOX feature">
+        <div class="card-head">
+          <p class="card-label">RUSTWOOD’S JOURNAL / VOX</p>
+          <span class="tiny">LIVE CONSOLE</span>
+        </div>
+        <div class="tabs">
+          <button type="button" class="tab active">PITCH</button>
+          <button type="button" class="tab">RMS</button>
+          <button type="button" class="tab">CREST</button>
+        </div>
+        <div class="spectrum-wrap">
+          <div class="bars" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <svg class="wave" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,60 C40,20 80,100 120,60 C160,20 200,100 240,60 C280,20 320,100 360,60 C400,20 440,100 480,60 C520,20 560,100 600,60"/>
+          </svg>
+        </div>
+      </aside>
+    </section>
+
+    <section class="proof-strip section panel" aria-label="Proof strip">
+      <p>• Studio-grade workflow</p>
+      <p>• Clear deliverables</p>
+      <p>• Personal-only or release-ready</p>
+      <p>• Collaborative if you have a producer</p>
+    </section>
+
+    <section class="section" id="what-you-get">
+      <div class="section-head">
+        <h2>What you receive</h2>
+        <p>A finished song you can keep, share, or release — built with care from the first line to the final master.</p>
+      </div>
+      <div class="grid three">
+        <article class="panel card lift">
+          <h3>Songwriting</h3>
+          <p>Your story → hook, structure, lyric craft.</p>
+        </article>
+        <article class="panel card lift">
+          <h3>Vocal Performance</h3>
+          <p>Emotion-forward delivery in the right key.</p>
+        </article>
+        <article class="panel card lift">
+          <h3>Production Package</h3>
+          <p>Master + optional add-ons.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="examples">
+      <div class="section-head">
+        <h2>Hear the work</h2>
+        <p>Short highlights so you can feel the tone and finish.</p>
+      </div>
+      <div class="grid examples">
+        <article class="panel tile lift">
+          <h3>Anniversary</h3><p>warm, cinematic</p>
+        </article>
+        <article class="panel tile lift">
+          <h3>Memorial</h3><p>intimate, honest</p>
+        </article>
+        <article class="panel tile lift">
+          <h3>Personal anthem</h3><p>powerful, driving</p>
+        </article>
+      </div>
+      <p class="note">Full examples available on request.</p>
+    </section>
+
+    <section class="section" id="process">
+      <div class="section-head"><h2>The process</h2></div>
+      <ol class="process-list">
+        <li class="panel lift"><span>1.</span> Creative brief</li>
+        <li class="panel lift"><span>2.</span> Draft & direction</li>
+        <li class="panel lift"><span>3.</span> Record & produce</li>
+        <li class="panel lift"><span>4.</span> Delivery</li>
+      </ol>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="section-head"><h2>Pricing</h2><p>Simple, transparent pricing. Add only what you need.</p></div>
+      <div class="panel pricing-card">
+        <div class="line-item"><span>Custom Song (Core Package)</span><strong>$200</strong></div>
+        <label class="addon"><input type="checkbox" id="addon-karaoke" value="50" /> Karaoke Track (Instrumental version) — +$50</label>
+        <label class="addon"><input type="checkbox" id="addon-stems" value="50" /> Full Stems (separated tracks) — +$50</label>
+        <p class="estimate">Estimated total: <strong id="estimatedTotal">$200</strong></p>
+        <p class="payment-note"><strong>Payment & Next Steps:</strong> After you submit your brief, I’ll review it and confirm availability. If everything’s aligned, I’ll send an invoice link for the total you selected. Work begins once payment is received.</p>
+      </div>
+    </section>
+
+    <section class="section" id="brief">
+      <div class="section-head">
+        <h2>Creative Brief Console</h2>
+        <p>Complete this on-page brief and I’ll come back with scope, timeline, and invoice steps.</p>
+      </div>
+      <form class="panel brief-form" id="briefForm" action="https://formsubmit.co/rustwood.agent@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Rustwood Vocals — New Creative Brief" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="selected_total" id="selected_total" value="$200" />
+
+        <div class="two-col">
+          <label>Full name<input type="text" name="full_name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+        </div>
+        <label>Occasion<input type="text" name="occasion" placeholder="e.g. Anniversary, memorial, birthday" required /></label>
+        <label>Your story<textarea name="story" rows="5" required></textarea></label>
+        <label>Sound reference<textarea name="reference" rows="3" placeholder="Artists, songs, tone notes"></textarea></label>
+
+        <fieldset>
+          <legend>Add-ons</legend>
+          <label><input type="checkbox" name="add_on_karaoke" value="Yes" id="form-karaoke" /> Karaoke Track (+$50)</label>
+          <label><input type="checkbox" name="add_on_stems" value="Yes" id="form-stems" /> Full Stems (+$50)</label>
+        </fieldset>
+
+        <p class="estimate">Estimated total for invoice: <strong id="formTotal">$200</strong></p>
+        <p class="payment-note"><strong>Payment & Next Steps:</strong> After you submit your brief, I’ll review it and confirm availability. If everything’s aligned, I’ll send an invoice link for the total you selected. Work begins once payment is received.</p>
+        <p class="routing-note">Form submissions currently route to: <strong>rustwood.agent@gmail.com</strong> via FormSubmit.</p>
+
+        <button class="btn btn-primary" type="submit">Send Creative Brief</button>
+      </form>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-head"><h2>FAQ</h2></div>
+      <div class="faq-list">
+        <details class="panel"><summary>Do I own the final song?</summary><p>Yes. You own the finished deliverables supplied under your brief agreement.</p></details>
+        <details class="panel"><summary>Can you work with my producer?</summary><p>Yes. I can deliver files in a format your producer can continue with.</p></details>
+        <details class="panel"><summary>Can I request revisions?</summary><p>Yes. Revision points are defined at brief confirmation so expectations stay clear.</p></details>
+      </div>
+    </section>
+
+    <section class="section final-cta panel" id="final-cta">
+      <h2>Your song can start as one clean brief.</h2>
+      <p>If the story matters, let’s craft it properly and finish it to a release-ready standard.</p>
+      <button class="btn btn-primary" data-scroll="#brief">Book a Creative Brief</button>
+    </section>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
