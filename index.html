@@ -4,97 +4,108 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rustwood Vocals — Custom Songs</title>
-  <meta name="description" content="Turn your story into a finished song. Bespoke songwriting, vocal performance, and production polish." />
+  <meta name="description" content="Custom Songs-first. Bespoke songwriting, vocal performance, and production polish." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="page-shell">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="scan" aria-hidden="true"></div>
+
+  <main class="shell">
+    <!-- 1) HERO (two-column) -->
     <section class="hero section" id="top">
-      <div class="hero-copy panel lift">
-        <p class="eyebrow">RUSTWOOD VOCALS</p>
+      <article class="panel hero-copy lift">
         <h1>Turn your story into a finished song.</h1>
         <p class="subhead">Bespoke songwriting, vocal performance, and production polish — crafted like a signature artefact.</p>
-        <p class="trust-line">4–6 weeks • Rush available • Master + stems • You own it</p>
-        <div class="hero-actions">
-          <button class="btn btn-primary" data-scroll="#brief">Book a Creative Brief</button>
+        <p class="trust">4–6 weeks • Rush available • Master + stems • You own it</p>
+        <div class="actions">
+          <button class="btn btn-primary" data-scroll="#brief" data-open-brief="true">Book a Creative Brief</button>
           <button class="btn btn-secondary" data-scroll="#examples">Hear Examples</button>
         </div>
-        <p class="micro-line">Built for weddings, anniversaries, memorials, birthdays, and personal anthems.</p>
-      </div>
+        <p class="micro">Built for weddings, anniversaries, memorials, birthdays, and personal anthems.</p>
+      </article>
 
-      <aside class="hero-card panel lift" aria-label="Rustwood Journal VOX feature">
-        <div class="card-head">
-          <p class="card-label">RUSTWOOD’S JOURNAL / VOX</p>
+      <aside class="panel hero-feature lift" aria-label="Rustwood Journal VOX">
+        <div class="hero-feature-head">
+          <p class="small-caps">RUSTWOOD’S JOURNAL / VOX</p>
           <span class="tiny">LIVE CONSOLE</span>
         </div>
         <div class="tabs">
-          <button type="button" class="tab active">PITCH</button>
-          <button type="button" class="tab">RMS</button>
-          <button type="button" class="tab">CREST</button>
+          <button class="tab active" type="button">PITCH</button>
+          <button class="tab" type="button">RMS</button>
+          <button class="tab" type="button">CREST</button>
         </div>
-        <div class="spectrum-wrap">
-          <div class="bars" aria-hidden="true">
+        <div class="signal-card" aria-hidden="true">
+          <div class="bars">
             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
           </div>
-          <svg class="wave" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M0,60 C40,20 80,100 120,60 C160,20 200,100 240,60 C280,20 320,100 360,60 C400,20 440,100 480,60 C520,20 560,100 600,60"/>
+          <svg viewBox="0 0 600 100" preserveAspectRatio="none" class="wave">
+            <path d="M0,50 C30,15 60,85 90,50 C120,15 150,85 180,50 C210,15 240,85 270,50 C300,15 330,85 360,50 C390,15 420,85 450,50 C480,15 510,85 540,50 C570,15 600,85 600,50"/>
           </svg>
         </div>
       </aside>
     </section>
 
-    <section class="proof-strip section panel" aria-label="Proof strip">
+    <!-- 2) PROOF STRIP -->
+    <section class="proof-strip panel section" aria-label="Proof strip">
       <p>• Studio-grade workflow</p>
       <p>• Clear deliverables</p>
       <p>• Personal-only or release-ready</p>
       <p>• Collaborative if you have a producer</p>
     </section>
 
+    <!-- 3) WHAT YOU GET (3 cards) -->
     <section class="section" id="what-you-get">
-      <div class="section-head">
+      <header class="section-head">
         <h2>What you receive</h2>
         <p>A finished song you can keep, share, or release — built with care from the first line to the final master.</p>
-      </div>
+      </header>
       <div class="grid three">
-        <article class="panel card lift">
+        <article class="panel lift card">
           <h3>Songwriting</h3>
-          <p>Your story → hook, structure, lyric craft.</p>
+          <p>Your story → hook, structure, lyric craft</p>
         </article>
-        <article class="panel card lift">
+        <article class="panel lift card">
           <h3>Vocal Performance</h3>
-          <p>Emotion-forward delivery in the right key.</p>
+          <p>Emotion-forward delivery in the right key</p>
         </article>
-        <article class="panel card lift">
+        <article class="panel lift card">
           <h3>Production Package</h3>
-          <p>Master + optional add-ons.</p>
+          <p>Master + optional add-ons</p>
         </article>
       </div>
     </section>
 
+    <!-- 4) EXAMPLES (audio tiles) -->
     <section class="section" id="examples">
-      <div class="section-head">
+      <header class="section-head">
         <h2>Hear the work</h2>
         <p>Short highlights so you can feel the tone and finish.</p>
-      </div>
+      </header>
       <div class="grid examples">
-        <article class="panel tile lift">
-          <h3>Anniversary</h3><p>warm, cinematic</p>
+        <article class="panel lift tile">
+          <h3>Anniversary</h3>
+          <p>warm, cinematic</p>
         </article>
-        <article class="panel tile lift">
-          <h3>Memorial</h3><p>intimate, honest</p>
+        <article class="panel lift tile">
+          <h3>Memorial</h3>
+          <p>intimate, honest</p>
         </article>
-        <article class="panel tile lift">
-          <h3>Personal anthem</h3><p>powerful, driving</p>
+        <article class="panel lift tile">
+          <h3>Personal anthem</h3>
+          <p>powerful, driving</p>
         </article>
       </div>
-      <p class="note">Full examples available on request.</p>
+      <p class="examples-note">Full examples available on request.</p>
     </section>
 
+    <!-- 5) PROCESS (4 steps) -->
     <section class="section" id="process">
-      <div class="section-head"><h2>The process</h2></div>
+      <header class="section-head"><h2>The process</h2></header>
       <ol class="process-list">
         <li class="panel lift"><span>1.</span> Creative brief</li>
         <li class="panel lift"><span>2.</span> Draft & direction</li>
@@ -103,65 +114,160 @@
       </ol>
     </section>
 
+    <!-- 6) PRICING (AUD, direct prices) -->
     <section class="section" id="pricing">
-      <div class="section-head"><h2>Pricing</h2><p>Simple, transparent pricing. Add only what you need.</p></div>
-      <div class="panel pricing-card">
-        <div class="line-item"><span>Custom Song (Core Package)</span><strong>$200</strong></div>
-        <label class="addon"><input type="checkbox" id="addon-karaoke" value="50" /> Karaoke Track (Instrumental version) — +$50</label>
-        <label class="addon"><input type="checkbox" id="addon-stems" value="50" /> Full Stems (separated tracks) — +$50</label>
-        <p class="estimate">Estimated total: <strong id="estimatedTotal">$200</strong></p>
-        <p class="payment-note"><strong>Payment & Next Steps:</strong> After you submit your brief, I’ll review it and confirm availability. If everything’s aligned, I’ll send an invoice link for the total you selected. Work begins once payment is received.</p>
-      </div>
-    </section>
-
-    <section class="section" id="brief">
-      <div class="section-head">
-        <h2>Creative Brief Console</h2>
-        <p>Complete this on-page brief and I’ll come back with scope, timeline, and invoice steps.</p>
-      </div>
-      <form class="panel brief-form" id="briefForm" action="https://formsubmit.co/rustwood.agent@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Rustwood Vocals — New Creative Brief" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="selected_total" id="selected_total" value="$200" />
-
-        <div class="two-col">
-          <label>Full name<input type="text" name="full_name" required /></label>
-          <label>Email<input type="email" name="email" required /></label>
+      <header class="section-head">
+        <h2>Pricing</h2>
+        <p>Simple, transparent pricing. Add only what you need.</p>
+      </header>
+      <article class="panel pricing">
+        <div class="line-item">
+          <span>Custom Song (Core Package)</span>
+          <strong>$200</strong>
         </div>
-        <label>Occasion<input type="text" name="occasion" placeholder="e.g. Anniversary, memorial, birthday" required /></label>
-        <label>Your story<textarea name="story" rows="5" required></textarea></label>
-        <label>Sound reference<textarea name="reference" rows="3" placeholder="Artists, songs, tone notes"></textarea></label>
 
-        <fieldset>
-          <legend>Add-ons</legend>
-          <label><input type="checkbox" name="add_on_karaoke" value="Yes" id="form-karaoke" /> Karaoke Track (+$50)</label>
-          <label><input type="checkbox" name="add_on_stems" value="Yes" id="form-stems" /> Full Stems (+$50)</label>
-        </fieldset>
+        <label class="addon"><input type="checkbox" id="price-karaoke" value="50" /> Karaoke Track (Instrumental version) — +$50</label>
+        <label class="addon"><input type="checkbox" id="price-stems" value="50" /> Full Stems (separated tracks) — +$50</label>
 
-        <p class="estimate">Estimated total for invoice: <strong id="formTotal">$200</strong></p>
+        <p class="total-line">Estimated total: <strong id="pricingTotal">$200</strong></p>
+
         <p class="payment-note"><strong>Payment & Next Steps:</strong> After you submit your brief, I’ll review it and confirm availability. If everything’s aligned, I’ll send an invoice link for the total you selected. Work begins once payment is received.</p>
-        <p class="routing-note">Form submissions currently route to: <strong>rustwood.agent@gmail.com</strong> via FormSubmit.</p>
-
-        <button class="btn btn-primary" type="submit">Send Creative Brief</button>
-      </form>
+      </article>
     </section>
 
+    <!-- 7) CREATIVE BRIEF CONSOLE (embedded form on same page) -->
+    <section class="section" id="brief">
+      <header class="section-head">
+        <h2>Creative Brief Console</h2>
+        <p>Tell me the story. I’ll shape the song.</p>
+      </header>
+
+      <details class="panel brief-drawer" id="briefDrawer">
+        <summary>Open Creative Brief Form</summary>
+
+        <form id="briefForm" class="brief-form" method="POST" action="https://formsubmit.co/ajax/rustwood.agent@gmail.com">
+          <input type="hidden" name="_subject" value="Rustwood Vocals — Creative Brief Submission" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="selected_total" id="selected_total" value="$200" />
+
+          <fieldset>
+            <legend>A) The Moment</legend>
+            <label>What’s the song for?
+              <select name="song_for" required>
+                <option value="">Select one</option>
+                <option>Wedding</option>
+                <option>Anniversary</option>
+                <option>Memorial</option>
+                <option>Birthday</option>
+                <option>Personal anthem</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>Who is it for?
+              <input type="text" name="who_for" required />
+            </label>
+            <label>When do you need it by?
+              <input type="date" name="needed_by" required />
+            </label>
+            <label>Intended use:
+              <select name="intended_use" required>
+                <option value="">Select one</option>
+                <option>Personal gift</option>
+                <option>Public release</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>B) The Sound</legend>
+            <label>Your vibe in 3 words
+              <input type="text" name="vibe_words" required />
+            </label>
+            <label>Reference songs (up to 3)
+              <input type="text" name="reference_songs" placeholder="Song / Artist, Song / Artist, Song / Artist" />
+            </label>
+            <label>Vocal style preference
+              <select name="vocal_style" required>
+                <option value="">Select one</option>
+                <option>Gritty</option>
+                <option>Smooth</option>
+                <option>Big chorus</option>
+                <option>Intimate</option>
+                <option>Duet optional</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>C) The Story</legend>
+            <label>What happened?
+              <textarea name="story" rows="5" required></textarea>
+            </label>
+            <label>Key names/lines to include (optional)
+              <textarea name="key_lines" rows="3"></textarea>
+            </label>
+            <label>Anything to avoid (optional)
+              <textarea name="avoid" rows="3"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Package Selection</legend>
+            <p class="locked">Custom Song — $200 (locked)</p>
+            <label><input type="checkbox" name="add_on_karaoke" id="form-karaoke" value="+$50" /> Karaoke Track +$50</label>
+            <label><input type="checkbox" name="add_on_stems" id="form-stems" value="+$50" /> Full Stems +$50</label>
+            <p class="total-line">Auto-calc Total: <strong id="formTotal">$200</strong></p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Contact</legend>
+            <label>Name (required)
+              <input type="text" name="name" required />
+            </label>
+            <label>Email (required)
+              <input type="email" name="email" required />
+            </label>
+            <label>Phone (optional)
+              <input type="tel" name="phone" />
+            </label>
+            <label class="consent"><input type="checkbox" name="consent" required /> I’m ready for you to review this brief and follow up with an invoice link if accepted.</label>
+          </fieldset>
+
+          <p class="payment-note"><strong>Payment & Next Steps:</strong> After you submit your brief, I’ll review it and confirm availability. If everything’s aligned, I’ll send an invoice link for the total you selected. Work begins once payment is received.</p>
+
+          <button class="btn btn-primary" type="submit">Send Creative Brief</button>
+        </form>
+      </details>
+
+      <article class="panel success" id="successMessage" hidden>
+        <h3>Brief received.</h3>
+        <p>Thanks — I’ve got your story. I’ll review your brief and confirm availability. If we’re a fit, you’ll receive an invoice link for the total you selected. Once payment clears, we lock in your timeline and start production.</p>
+        <p class="small">Your story stays private. If you’d like to add voice notes or links, reply to the confirmation email.</p>
+      </article>
+    </section>
+
+    <!-- 8) FAQ (accordion) -->
     <section class="section" id="faq">
-      <div class="section-head"><h2>FAQ</h2></div>
+      <header class="section-head"><h2>FAQ</h2></header>
       <div class="faq-list">
-        <details class="panel"><summary>Do I own the final song?</summary><p>Yes. You own the finished deliverables supplied under your brief agreement.</p></details>
-        <details class="panel"><summary>Can you work with my producer?</summary><p>Yes. I can deliver files in a format your producer can continue with.</p></details>
-        <details class="panel"><summary>Can I request revisions?</summary><p>Yes. Revision points are defined at brief confirmation so expectations stay clear.</p></details>
+        <details class="panel"><summary>How long does it take?</summary><p>Standard 4–6 weeks. Rush may be available.</p></details>
+        <details class="panel"><summary>What do I own?</summary><p>You receive the master; stems if selected. You own your deliverables. Credit requested when it suits the story.</p></details>
+        <details class="panel"><summary>Can you collaborate with my producer?</summary><p>Yes — we can integrate with your producer/creative lead.</p></details>
+        <details class="panel"><summary>Revisions?</summary><p>We align direction early; small refinements are included.</p></details>
+        <details class="panel"><summary>Can you match styles?</summary><p>Yes, guided by your references.</p></details>
       </div>
     </section>
 
-    <section class="section final-cta panel" id="final-cta">
-      <h2>Your song can start as one clean brief.</h2>
-      <p>If the story matters, let’s craft it properly and finish it to a release-ready standard.</p>
-      <button class="btn btn-primary" data-scroll="#brief">Book a Creative Brief</button>
+    <!-- 9) FINAL CTA -->
+    <section class="section panel final-cta" id="final-cta">
+      <h2>Ready to turn your story into a bespoke score?</h2>
+      <div class="actions">
+        <button class="btn btn-primary" data-scroll="#brief" data-open-brief="true">Book a Creative Brief</button>
+        <button class="btn btn-secondary" data-scroll="#examples">Hear Examples</button>
+      </div>
     </section>
   </main>
 
-  <script src="assets/app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
